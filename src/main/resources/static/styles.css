@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html, #main{
+    width: 100vw;
+    height: 100vh;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+.code-block{
+    display: flex;
+    flex-direction: column;
+}
+
+#load_date{
+    font-weight: bold;
+}
+
+#code_snippet{
+    height: 40%;
+    font-weight: normal;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+#code_snippet, input, #send_snippet{
+    padding: 1%;
+    border: 1px solid black;
+    margin: 1%;
+}
+
+#time_restriction, #views_restriction, #load_date{
+    margin: 1%;
+}
+
+#send_snippet{
+    width: 50%;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: dodgerblue;
+    min-height: 5%;
+    font-weight: bold;
+    align-self: center;
+}
+
